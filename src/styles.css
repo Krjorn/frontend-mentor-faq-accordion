@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./reset.css');
+
+:root {
+  --color-white: #FFFFFF;
+  --color-background: #F9F0FF;
+  --color-font-primary: #2F1533;
+  --color-font-secondary: #8C6991;
+  --color-highlight: #AD28EB;
+
+  --font-text-size: 1rem;
+  --font-title-size: 2rem;
+}
+
+*, body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-text-size);
+  color: var(--color-font-primary);
+}

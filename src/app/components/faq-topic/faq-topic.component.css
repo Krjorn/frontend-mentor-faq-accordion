@@ -1,0 +1,35 @@
+button {
+  width: 100%;
+  background: none;
+  border: 0 none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: var(--font-text-size);
+  color: var(--color-font-primary);
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+button:hover {
+  color: var(--color-highlight);
+}
+
+button:focus {
+  color: var(--color-highlight);
+}
+
+button span {
+  display: block;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: url('../../../../public/images/icon-plus.svg') center/100% no-repeat;
+  /* background-color: var(--color-highlight); */
+}
+
+p {
+  color: var(--color-font-secondary);
+  font-size: var(--font-text-size);
+}
