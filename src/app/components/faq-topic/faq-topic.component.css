@@ -1,4 +1,9 @@
-button {
+.topic {
+  padding: 0 24px;
+  background-color: var(--color-white);
+}
+
+.topic--title {
   width: 100%;
   background: none;
   border: 0 none;
@@ -8,19 +13,20 @@ button {
   font-weight: 600;
   font-size: var(--font-text-size);
   color: var(--color-font-primary);
+  padding: 22px 0;
   cursor: pointer;
   transition: .2s ease-in;
 }
 
-button:hover {
+.topic--title:hover {
   color: var(--color-highlight);
 }
 
-button:focus {
+.topic--title:focus {
   color: var(--color-highlight);
 }
 
-button span {
+.topic--title-icon {
   display: block;
   height: 24px;
   width: 24px;
@@ -29,7 +35,24 @@ button span {
   /* background-color: var(--color-highlight); */
 }
 
-p {
+.icon-plus {
+  background-image: url('../../../../public/images/icon-plus.svg');
+}
+
+.icon-minus {
+  background-image: url('../../../../public/images/icon-minus.svg');
+}
+
+.topic--text {
   color: var(--color-font-secondary);
   font-size: var(--font-text-size);
+  padding: 6px 0 22px;
+}
+
+.topic--span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-font-secondary);
+  opacity: .3;
 }
