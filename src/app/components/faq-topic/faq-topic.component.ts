@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IdGeneratorService } from '../../services/id-service/id-generator.service';
 
 @Component({
   selector: 'app-faq-topic',
@@ -8,7 +9,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './faq-topic.component.html',
   styleUrl: './faq-topic.component.css'
 })
-export class FaqTopicComponent {
+export class FaqTopicComponent implements OnInit {
   @Input()
   title = '';
 
@@ -21,8 +22,16 @@ export class FaqTopicComponent {
   isExpanded = false;
   iconPlus = 'icon-plus';
   iconMinus = 'icon-minus';
+  id = '';
+
+  constructor(private idService: IdGeneratorService) {}
 
   public expandTopic(): void {
     this.isExpanded = !this.isExpanded;
+  }
+
+  ngOnInit(): void {
+      this.id = this.idService.getId('faq-topic');
+      console.log(this.id)
   }
 }

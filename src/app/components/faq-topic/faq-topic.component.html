@@ -1,8 +1,22 @@
 <div class="topic">
-  <button class="topic--title" (click)="expandTopic()">
-    {{ title }}
-    <span class="topic--title-icon" [class] = "isExpanded ? iconMinus : iconPlus"></span>
+  <button
+    class="topic--title"
+    (click)="expandTopic()"
+    [attr.aria-expanded]="isExpanded"
+    [attr.aria-controls]="id"
+  >
+    <h2>{{ title }}</h2>
+    <span
+      class="topic--title-icon"
+      [class]="isExpanded ? iconMinus : iconPlus">
+    </span>
   </button>
-  <p class="topic--text" *ngIf="isExpanded">{{ text }}</p>
+  <p
+    class="topic--text"
+    [id]="id"
+    *ngIf="isExpanded"
+  >
+    {{ text }}
+  </p>
   <span class="topic--span" *ngIf="!isLast"></span>
 </div>
