@@ -15,8 +15,7 @@
     class="topic--text"
     [id]="id"
     *ngIf="isExpanded"
-  >
-    {{ text }}
-  </p>
+    [innerHtml]="text"
+  ></p>
   <span class="topic--span" *ngIf="!isLast"></span>
 </div>

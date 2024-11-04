@@ -1,0 +1,11 @@
+<div>
+  <h1><span></span> FAQs</h1>
+  <ul>
+    <li *ngFor="let topic of topics">
+      <app-faq-topic
+        [title]="topic.question"
+        [text]="topic.answer">
+      </app-faq-topic>
+    </li>
+  </ul>
+</div>

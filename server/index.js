@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-app.use(express.static('./'));
+
+app.use(cors(), express.static('./'));
 
 app.get('/', (req, res) => {
   res.redirect('/data.json');

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FaqTopicComponent } from './components/faq-topic/faq-topic.component';
+import { FaqFrameComponent } from './components/faq-frame/faq-frame.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    FaqTopicComponent
+    FaqFrameComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

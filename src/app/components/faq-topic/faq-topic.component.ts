@@ -32,6 +32,5 @@ export class FaqTopicComponent implements OnInit {
 
   ngOnInit(): void {
       this.id = this.idService.getId('faq-topic');
-      console.log(this.id)
   }
 }
