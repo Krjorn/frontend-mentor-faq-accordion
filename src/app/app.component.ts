@@ -6,7 +6,7 @@ import { FaqFrameComponent } from './components/faq-frame/faq-frame.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
+    // RouterOutlet,
     FaqFrameComponent
   ],
   templateUrl: './app.component.html',

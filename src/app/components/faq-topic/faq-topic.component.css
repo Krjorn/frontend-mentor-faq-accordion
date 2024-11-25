@@ -10,9 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   font-weight: 600;
   font-size: var(--font-text-size);
   color: var(--color-font-primary);
+  text-align: left;
   padding: 22px 0;
   cursor: pointer;
   transition: .2s ease-in;
@@ -30,9 +32,9 @@
   display: block;
   height: 24px;
   width: 24px;
+  flex: 0 0 auto;
   border-radius: 50%;
   background: url('../../../../public/images/icon-plus.svg') center/100% no-repeat;
-  /* background-color: var(--color-highlight); */
 }
 
 .icon-plus {

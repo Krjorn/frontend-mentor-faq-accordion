@@ -1,10 +1,13 @@
-<div>
-  <h1><span></span> FAQs</h1>
+<div class="faq-frame">
+  <h1 class="faq-frame--title">
+    <span class="faq-frame--title-icon"></span> FAQs
+  </h1>
   <ul>
-    <li *ngFor="let topic of topics">
+    <li *ngFor="let topic of topics; last as l">
       <app-faq-topic
         [title]="topic.question"
-        [text]="topic.answer">
+        [text]="topic.answer"
+        [isLast]="l">
       </app-faq-topic>
     </li>
   </ul>
