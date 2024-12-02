@@ -17,7 +17,8 @@ export class FaqFrameComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-      this.http.get<Topic[]>('http://localhost:3000/data.json')
+      // this.http.get<Topic[]>('http://localhost:3000/data.json')
+      this.http.get<Topic[]>('https://raw.githubusercontent.com/Krjorn/frontend-mentor-faq-accordion/refs/heads/main/server/data.json')
         .subscribe({
           next: topics => this.topics = topics
         })
